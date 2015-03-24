@@ -1,0 +1,75 @@
+.main{
+    background-color: rgb(245, 242, 242);
+}
+.own-bar{
+
+    border-color: #9BBAEF;
+    background-color: #9BBAEF;
+    background-image: linear-gradient(0deg, #9BBAEF, #9BBAEF 50%, transparent 50%);
+    color: #fff;
+    height: 150px
+
+
+}
+.own-bar > div {
+
+    height: 46px
+}
+.headerClass{
+    color: #3d17a1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+
+}
+.subHeaderClass{
+    color: #fdfffb;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.headerInput > input{
+
+    text-align: center;
+    margin:0 auto;
+    width:220px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(245, 242, 242);
+
+
+}
+
+input::-webkit-input-placeholder {
+    color: rgba(107, 116, 105, 0.88);
+    font-size: 18px;
+
+}
+input::-moz-placeholder {
+    color: rgba(107, 116, 105, 0.88);
+    font-size: 18px;
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+    color: rgba(107, 116, 105, 0.88);
+    font-size: 18px;
+
+}
+input:-ms-input-placeholder {
+    color: rgba(107, 116, 105, 0.88);
+    font-size: 18px;
+
+}
+.footer-bar{
+    border-color: #9BBAEF;
+    background-color: #9BBAEF;
+    background-image: linear-gradient(0deg, #9BBAEF, #9BBAEF 50%, transparent 50%);
+    color: #fff;
+    height: 70px
+}
+.youtubeVideoClass{
+    height: 100%;
+    width: 100%;
+}
+
+

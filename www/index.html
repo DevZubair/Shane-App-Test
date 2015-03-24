@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="videoController">
+
+
+  <ion-content class="main">
+
+    <div class="own-bar">
+
+      <div class="row">
+        <div class="col">
+          <h1 class="headerClass">Pitcher</h1>
+
+        </div>
+
+
+
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <h1 class="subHeaderClass">Hit Play. Get Paid.</h1>
+
+        </div>
+
+      </div>
+
+
+      <div class="row">
+
+
+
+        <div class="col headerInput">
+
+          <input type="text" placeholder="Email">
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+    </div>
+
+    <div id="video-div" class="row">
+
+      <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" preload="metadata"
+             webkit-playsinline="webkit-playsinline" class="youtubeVideoClass">
+
+        <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
+
+      </video>
+
+    </div>
+
+
+
+
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="footer-bar">
+
+  </ion-footer-bar>
+
+  </body>
+</html>
