@@ -19,6 +19,19 @@ angular.module('starter', ['ionic'])
 })
 .controller('videoController', function ($scope) {
 
+        /* ++++++++++++++++++ Comment 26th March, 2015 ++++++++++++++++++++++
+
+         Here I have used two basic functions using the HTML5 video element. There are multiple methods available for the video
+         . For example: controls, autoplay, restart, fast forward, rewind, play, stop, pause. For our case we just be needing start
+         and pause so I have used only these two methods. When we put the finger on the screen, the on-touch method is called and
+         so does the playVideo function and it plays the video.
+         When we remove the finger so on-release method is called which also calls the stopVideo function and so it makes
+         the video to pause state.
+
+
+
+         */
+
       $scope.playVideo = function() {
 
         var video = document.getElementById("youtubeVideo");

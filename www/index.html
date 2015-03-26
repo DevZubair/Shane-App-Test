@@ -66,14 +66,36 @@
 
     </div>
 
+
+    <!-- ++++++++++++++++++++++ 26th March, 2015 +++++++++++++++++++++++++++++
+
+     Below I have just used simple HTML5 video tag to embed a video url here. Ionic provides a directive on-touch and on-release
+     for video tags which is used to get the touch gestures. I have called two functions playVideo and stopVideo which are
+     made in app.js
+     webkit allows to play the functionality in the browsers as well.
+
+     Note:
+
+     There are multiple other methods of ionic for gestures which can be found on there site in docs. We can also use
+     onHold method which will check that for how long I am keeping my fingers on to the screen. It's a charm working with ionic.
+
+     Ionic Gestures: http://ionicframework.com/docs/api/directive/onTouch/
+
+
+     -->
+
+
+
     <div id="video-div" class="row">
 
+      <div class="col">
       <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" preload="metadata"
              webkit-playsinline="webkit-playsinline" class="youtubeVideoClass">
 
         <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
 
       </video>
+      </div>
 
     </div>
 
