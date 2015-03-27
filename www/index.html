@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html ng-app="starter">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title></title>
@@ -20,47 +20,54 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
-  </head>
-  <body ng-controller="videoController">
+</head>
+<body ng-controller="videoController">
 
 
-  <ion-content class="main">
+<ion-content class="main">
 
     <div class="own-bar">
 
-      <div class="row">
-        <div class="col">
-          <h1 class="headerClass">Pitcher</h1>
+        <div class="row" style="height: 80px">
+
+
+            <div class="col col-offset-33">
+                <!--<h1 class="headerClass">Pitcher</h1>-->
+                <img src="img/DevLogo.jpg" class="headerLogo">
+
+            </div>
+
+
+
+
+        </div>
+
+        <div class="row subHeaderClass" style="height: 35px">
+            <div class="col col-offset-33">
+                <h1>Hit Play. Get Paid.</h1>
+
+            </div>
 
         </div>
 
 
+        <div class="row" style="display:inline-block">
 
-      </div>
 
-      <div class="row">
-        <div class="col">
-          <h1 class="subHeaderClass">Hit Play. Get Paid.</h1>
+
+            <div class="col">
+                <div class="headerInput">
+
+                    <input type="text" placeholder="email">
+                </div>
+            </div>
+
+
+
+
+
 
         </div>
-
-      </div>
-
-
-      <div class="row">
-
-
-
-        <div class="col headerInput">
-
-          <input type="text" placeholder="Email">
-
-        </div>
-
-
-
-
-      </div>
 
 
 
@@ -88,25 +95,25 @@
 
     <div id="video-div" class="row">
 
-      <div class="col">
-      <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" preload="metadata"
-             webkit-playsinline="webkit-playsinline" class="youtubeVideoClass">
+        <div class="col">
+            <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" preload="metadata"
+                   webkit-playsinline="webkit-playsinline" class="youtubeVideoClass">
 
-        <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
+                <source src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
 
-      </video>
-      </div>
+            </video>
+        </div>
 
     </div>
 
 
 
 
-  </ion-content>
+</ion-content>
 
-  <ion-footer-bar align-title="left" class="footer-bar">
+<ion-footer-bar align-title="left" class="footer-bar">
 
-  </ion-footer-bar>
+</ion-footer-bar>
 
-  </body>
+</body>
 </html>
