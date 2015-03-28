@@ -5,19 +5,19 @@
 // the 2nd parameter is an array of 'requires'
 angular.module('starter', ['ionic'])
 
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
-    // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-    // for form inputs)
-    if(window.cordova && window.cordova.plugins.Keyboard) {
-      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-    }
-    if(window.StatusBar) {
-      StatusBar.styleDefault();
-    }
-  });
-})
-.controller('videoController', function ($scope) {
+    .run(function($ionicPlatform) {
+        $ionicPlatform.ready(function() {
+            // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+            // for form inputs)
+            if(window.cordova && window.cordova.plugins.Keyboard) {
+                cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+            }
+            if(window.StatusBar) {
+                StatusBar.styleDefault();
+            }
+        });
+    })
+    .controller('videoController', function ($scope) {
 
         /* ++++++++++++++++++ Comment 26th March, 2015 ++++++++++++++++++++++
 
@@ -32,21 +32,21 @@ angular.module('starter', ['ionic'])
 
          */
 
-      $scope.playVideo = function() {
+        $scope.playVideo = function() {
 
-        var video = document.getElementById("youtubeVideo");
+            var video = document.getElementById("youtubeVideo");
 
-        if (video.paused) {
-          video.play();
+            if (video.paused) {
+                video.play();
 
+            }
+        };
+
+
+        $scope.stopVideo=function(){
+            var video = document.getElementById("youtubeVideo");
+            video.pause();
         }
-      };
-
-
-    $scope.stopVideo=function(){
-      var video = document.getElementById("youtubeVideo");
-        video.pause();
-    }
 
 
 
