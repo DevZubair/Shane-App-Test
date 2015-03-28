@@ -91,10 +91,18 @@
     paused.
 
      -->
+    <div style=" position: relative;" class="row">
+
+    <div class="videoTimer col col-offset-66">
+
+        <b style="display: inline;">$ {{$parent.videoTime}}</b>
+    </div>
 
 
 
-    <div id="video-div" class="row">
+
+    <div id="video-div" class="row" style="position: absolute;">
+
 
         <div class="col">
             <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" onmouseup="playVideo()" preload="metadata"
@@ -102,12 +110,14 @@
 
                 <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
 
+                Your browser does not support the video tag.
+
             </video>
         </div>
 
     </div>
 
-
+    </div>
 
 
 </ion-content>
@@ -115,6 +125,8 @@
 <ion-footer-bar align-title="left" class="footer-bar">
 
 </ion-footer-bar>
+
+
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
+var getTime;
 angular.module('starter', ['ionic'])
 
     .run(function($ionicPlatform) {
@@ -32,16 +33,32 @@ angular.module('starter', ['ionic'])
 
          */
 
+        $scope.videoTime=0;
+
+        var video = document.getElementById("youtubeVideo");
+
+
+
         $scope.playVideo = function() {
 
-            var video = document.getElementById("youtubeVideo");
+
 
             if (video.paused) {
                 video.play();
 
+                $scope.timer = setInterval(function () {
+
+                    $scope.$digest($scope.videoTime++);
+                    console.log('Playing')
+
+                },1000);
+
+
             }
             else{
+
                 video.pause();
+                clearInterval($scope.timer);
             }
         };
 
@@ -49,9 +66,21 @@ angular.module('starter', ['ionic'])
 
 
         $scope.stopVideo=function(){
-            var video = document.getElementById("youtubeVideo");
+
             video.pause();
-        }
+            clearInterval($scope.timer);
+        };
+
+
+
+
+
+
+
+
+
+
+
 
 
 

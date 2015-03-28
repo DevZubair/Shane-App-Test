@@ -103,6 +103,19 @@ input:-ms-input-placeholder {
     width: 100px;
     height: 100px;
 }
+.videoTimer{
+
+    font-size: 25px;
+    font-family: cursive;
+    color: green;
+    position: absolute;
+    z-index: 1000;
+    margin-top:25px;
+
+
+
+
+}
 
 @media screen and (max-width: 600px) {
 
@@ -113,6 +126,7 @@ input:-ms-input-placeholder {
 
     }
 }
+
 
 /* ++++++++++++++++ Comment 28th March, 2015 ++++++++++++++++++++++++++++
 
