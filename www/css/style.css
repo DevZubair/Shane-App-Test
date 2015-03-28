@@ -1,12 +1,12 @@
 .main{
-    background-color: rgb(245, 242, 242);
+    background-color: #ffffff;
 }
 .own-bar{
 
     border-color: #9BBAEF;
     background-color: #9BBAEF;
     background-image: linear-gradient(0deg, #9BBAEF, #9BBAEF 50%, transparent 50%);
-    color: #fff;
+    color: #ffffff;
     height: 150px;
 
 
@@ -27,7 +27,7 @@
 }
 
 .subHeaderClass > div > h1{
-    color: #fdfffb;
+    color: #ffffff;
 
     font-weight: bold;
     font-size: 14px;
@@ -42,7 +42,7 @@
     height: 35px;
     width: 220px;
     border-radius: 0px;
-    background-color: rgb(245, 242, 242);
+    background-color: #ffffff;
 
 }
 .headerInput > input{
@@ -52,7 +52,7 @@
     width: 95%;
     height: 30px;
     border-radius: 0px;
-    background-color: rgb(245, 242, 242);
+    background-color: #ffffff;
     border-bottom: 1px dotted grey;
 
 
@@ -91,11 +91,16 @@ input:-ms-input-placeholder {
 
 }
 .headerLogo{
-    width: 100px;
-    height: 100px;
-    margin-left: 05px;
 
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+.headerLogo > img {
 
+    width: 100px;
+    height: 100px;
+}
 
