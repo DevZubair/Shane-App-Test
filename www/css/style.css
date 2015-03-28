@@ -114,3 +114,12 @@ input:-ms-input-placeholder {
     }
 }
 
+/* ++++++++++++++++ Comment 28th March, 2015 ++++++++++++++++++++++++++++
+
+ @media query is used to detect the screen sizes, this feature is used becuase we want our App to be responsive for both mobile
+ and web browsers. Mostly maximum width of screen for a mobile or tablet is 600px and above them is a browser screen so I am
+ increasing the width of the video size because it looks odd to be small on the browser.
+
+
+ */
+

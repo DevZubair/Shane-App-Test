@@ -40,7 +40,12 @@ angular.module('starter', ['ionic'])
                 video.play();
 
             }
+            else{
+                video.pause();
+            }
         };
+
+        //else condition is used because when I release the mouse click so video should pause.
 
 
         $scope.stopVideo=function(){
