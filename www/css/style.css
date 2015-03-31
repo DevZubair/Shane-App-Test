@@ -3,9 +3,9 @@
 }
 .own-bar{
 
-    border-color: #9BBAEF;
-    background-color: #9BBAEF;
-    background-image: linear-gradient(0deg, #9BBAEF, #9BBAEF 50%, transparent 50%);
+    border-color: #ffffff;
+    background-color: #ffffff;
+    background-image: linear-gradient(0deg, #ffffff, #ffffff 50%, transparent 50%);
     color: #ffffff;
     height: 150px;
 
@@ -78,10 +78,10 @@ input:-ms-input-placeholder {
 
 }
 .footer-bar{
-    border-color: #9BBAEF;
-    background-color: #9BBAEF;
-    background-image: linear-gradient(0deg, #9BBAEF, #9BBAEF 50%, transparent 50%);
-    color: #fff;
+    border-color: #ffffff;
+    background-color: #ffffff;
+    background-image: linear-gradient(0deg, #ffffff, #ffffff 50%, transparent 50%);
+    color: #ffffff;
     height: 70px
 }
 .youtubeVideoClass{
