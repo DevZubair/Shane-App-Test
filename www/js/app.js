@@ -36,6 +36,8 @@ angular.module('starter', ['ionic'])
 
         $scope.videoTime=0;
 
+        $scope.disableButton='';
+
         $scope.video = document.getElementById("youtubeVideo");
 
 

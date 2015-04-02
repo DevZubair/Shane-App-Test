@@ -46,7 +46,7 @@
 
 
 
-        <div class="row">
+        <div class="row" style=" height: 50px;">
 
 
 
@@ -65,7 +65,6 @@
 
 
 
-
             </div>
 
 
@@ -78,6 +77,26 @@
         </div>
 
 
+        <div class="row" style="height: 30px;">
+
+            <div class="col">
+
+                <p style="text-align: center;" ng-if="emailInput!=''"><b style="font-size:16px; text-decoration: underline">Zenefits</b> sponsered you <b style="color: #33cd5f">$40</b></p>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col" style="text-align: center;
+    margin-left: auto;
+    margin-right: auto;">
+
+                <p style="color: #33cd5f;font-weight: bold; display: inline">Just hold play</p>
+                <img src="img/greenArrow.png" style="height: 25px; width: 25px">
+
+            </div>
+        </div>
 
     </div>
 
@@ -106,37 +125,37 @@
 
      -->
 
-  <!--  <div ng-show="video.ended" ng-hide="video.ended">
+    <!--  <div ng-show="video.ended" ng-hide="video.ended">
 
-    <div style=" position: relative;" class="row">
+      <div style=" position: relative;" class="row">
 
-    <div class="videoTimer col col-offset-66">
+      <div class="videoTimer col col-offset-66">
 
-        <b style="display: inline;">$ {{$parent.videoTime}}</b>
-    </div>
-
-
-
-    <div id="video-div" class="row" style="position: absolute;">
+          <b style="display: inline;">$ {{$parent.videoTime}}</b>
+      </div>
 
 
-        <div class="col">
-            <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" onmouseup="playVideo()" preload="metadata"
-                   webkit-playsinline="webkit-playsinline" class="youtubeVideoClass">
 
-                <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
-
-                Your browser does not support the video tag.
-
-            </video>
-        </div>
-
-    </div>
-
-    </div>
+      <div id="video-div" class="row" style="position: absolute;">
 
 
-    </div>-->
+          <div class="col">
+              <video id="youtubeVideo" on-touch="playVideo()" on-release="stopVideo()" onmouseup="playVideo()" preload="metadata"
+                     webkit-playsinline="webkit-playsinline" class="youtubeVideoClass">
+
+                  <source src="https://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4" type="video/mp4"/>
+
+                  Your browser does not support the video tag.
+
+              </video>
+          </div>
+
+      </div>
+
+      </div>
+
+
+      </div>-->
 
     <div ng-show="!video.ended" ng-hide="!video.ended">
 
@@ -147,7 +166,7 @@
 
 
 
-        </div>
+    </div>
 
     <div class="row">
 
