@@ -35,7 +35,9 @@ angular.module('starter', ['ionic'])
 
         $scope.videoTime=0;
 
-        var video = document.getElementById("youtubeVideo");
+        $scope.video = document.getElementById("youtubeVideo");
+
+
 
 
 
@@ -43,8 +45,8 @@ angular.module('starter', ['ionic'])
 
 
 
-            if (video.paused) {
-                video.play();
+            if ($scope.video.paused) {
+                $scope.video.play();
 
                 $scope.timer = setInterval(function () {
 
@@ -54,10 +56,12 @@ angular.module('starter', ['ionic'])
                 },1000);
 
 
+
+
             }
             else{
 
-                video.pause();
+                $scope.video.pause();
                 clearInterval($scope.timer);
             }
         };
@@ -67,7 +71,7 @@ angular.module('starter', ['ionic'])
 
         $scope.stopVideo=function(){
 
-            video.pause();
+            $scope.video.pause();
             clearInterval($scope.timer);
         };
 

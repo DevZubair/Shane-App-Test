@@ -51,11 +51,23 @@
 
 
             <div class="col">
-                <div class="headerInput">
+                <div class="headerInput row">
 
-                    <input type="text" placeholder="">
+                    <input class="col" type="text" placeholder="company email">
+
+
+                    <button class="col-20 button button-small button-outline button-balanced checkButton">check</button>
+
                 </div>
+
+
+
+
+
+
             </div>
+
+
 
 
 
@@ -68,7 +80,7 @@
 
     </div>
 
-    
+
 
     <!-- ++++++++++++++++++++++ 26th March, 2015 +++++++++++++++++++++++++++++
 
@@ -92,13 +104,15 @@
     paused.
 
      -->
+
+  <!--  <div ng-show="video.ended" ng-hide="video.ended">
+
     <div style=" position: relative;" class="row">
 
     <div class="videoTimer col col-offset-66">
 
         <b style="display: inline;">$ {{$parent.videoTime}}</b>
     </div>
-
 
 
 
@@ -119,6 +133,49 @@
     </div>
 
     </div>
+
+
+    </div>-->
+
+    <div ng-show="!video.ended" ng-hide="!video.ended">
+        <div class="row">
+
+
+
+
+
+
+
+        </div>
+        </div>
+
+    <div class="row">
+
+        <div class="col"></div>
+
+        <div class="col-80">
+
+            <div class="row row-center endVideo">
+
+                <div class="text-center">
+                    <button class="button button-large">No interest</button>
+
+
+                    <button class="button button-large">Learn More</button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="col"></div>
+
+
+
+
+    </div>
+
 
 
 </ion-content>
