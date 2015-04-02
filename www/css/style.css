@@ -170,6 +170,20 @@ input:-ms-input-placeholder {
 }
 
 
+.companyNameHeading > p {
+    text-align: center;
+}
+
+.companyNameHeading > p > b{
+    font-size:16px;
+
+
+}
+.companyNameHeading > p > b ~ b {
+    color: #33cd5f;
+}
+
+
 @media screen and (max-width: 600px) {
 
     .youtubeVideoClass{

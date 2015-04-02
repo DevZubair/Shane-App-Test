@@ -18,7 +18,7 @@ angular.module('starter', ['ionic'])
             }
         });
     })
-    .controller('videoController', function ($scope) {
+    .controller('videoController', function ($scope,$ionicPopover) {
 
         /* ++++++++++++++++++ Comment 26th March, 2015 ++++++++++++++++++++++
 
@@ -88,9 +88,19 @@ angular.module('starter', ['ionic'])
 
 
 
+        $ionicPopover.fromTemplateUrl('templates/popover.html', {
+            scope: $scope
+        }).then(function(popover) {
+            $scope.popover = popover;
+        });
 
 
+        $scope.popFuncShow= function (event) {
+            $scope.popover.show(event);
 
+        };
+
+      
 
 
 
