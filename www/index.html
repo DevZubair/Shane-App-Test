@@ -79,7 +79,7 @@
             <div class="col companyNameHeading">
 
                 <p ng-if="emailInput!=''">
-                    <b style="cursor: pointer ;text-decoration: underline;" ng-mouseover="popFuncShow($event)" ng-click="popover.show($event)">Zenefits</b>
+                    <b style="cursor: pointer ;text-decoration: underline;" ng-mouseover="popFuncShow($event)" ng-click="showModal()">Zenefits</b>
 
                     sponsered you
                     <b>$40</b>
@@ -212,6 +212,21 @@
            <p></p>
         </ion-content>
     </ion-popover-view>
+</script>
+
+<script id="my-modal.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar>
+            <h1 class="title">Pitcher App</h1>
+        </ion-header-bar>
+        <ion-content>
+            Just Checking
+
+
+            <button class="button button-assertive" ng-click="closeModal()">Close</button>
+
+        </ion-content>
+    </ion-modal-view>
 </script>
 
 
