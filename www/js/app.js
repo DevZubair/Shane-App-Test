@@ -32,6 +32,7 @@ angular.module('starter', ['ionic'])
 
 
          */
+        $scope.emailInput='';
 
         $scope.videoTime=0;
 
@@ -76,6 +77,10 @@ angular.module('starter', ['ionic'])
         };
 
 
+        if($scope.emailInput!=''){
+            alert('dafsf');
+            $scope.buttonFull='button-block'
+        }
 
 
 

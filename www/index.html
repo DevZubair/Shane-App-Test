@@ -53,10 +53,11 @@
             <div class="col">
                 <div class="headerInput row">
 
-                    <input class="col" type="text" placeholder="company email">
+                    <input class="col" type="text" placeholder="company email" ng-model="emailInput">
 
 
-                    <button class="col-20 button button-small button-outline button-balanced checkButton">check</button>
+                    <button class="col-20 checkButton button button-small button-balanced" ng-class="emailInput.length>0 ? '' : 'button-outline'">check</button>
+
 
                 </div>
 
@@ -179,7 +180,7 @@
 
 </ion-content>
 
-<ion-footer-bar align-title="left" class="footer-bar">
+<!--<ion-footer-bar align-title="left" class="footer-bar">-->
 
 </ion-footer-bar>
 
