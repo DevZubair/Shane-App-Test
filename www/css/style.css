@@ -188,6 +188,12 @@ input:-ms-input-placeholder {
         color: red;
         border-radius: 10px;
         font-size: small;
+        margin-right: 0;
+        width: 110px;
+        height: 40px;
+
+
+
 
     }
 
@@ -195,6 +201,9 @@ input:-ms-input-placeholder {
         color: green;
         border-radius: 10px;
         font-size: small;
+        margin-left: 0;
+
+
 
 
     }
