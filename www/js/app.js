@@ -121,6 +121,29 @@ angular.module('starter', ['ionic'])
         };
 
 
+        /*
+        *  +++++++++++++++++++++++++++++ Zubair Comment 8th April, 2015 ++++++++++++++++++++++++++++++++
+        *
+        *  I have made a function of restart Video below which is called when we click on 'Replay Video' text. Simply HTML5
+        *  builtin functions is used, first paused the video than made the currentTime of the video to zero and than played the
+        *  video.
+        *  Note:
+        *  I have paused the video again after play because we don't want the user to see the video in one go, video only
+        *  plays when user holds the click or touch so video won't be played when replay button is clicked, instead just
+        *  brings the video from the start.
+        *
+        * */
+
+        $scope.restartVideo=function(){
+
+            $scope.video.pause();
+            $scope.video.currentTime='0';
+            $scope.video.play();
+            $scope.video.pause();
+
+        };
+
+        $scope.emailFound=false;
 
 
     });
